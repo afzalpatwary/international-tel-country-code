@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<!--<![endif]-->
+<!--[if gte IE 9] <style type="text/css"> .gradient {filter: none;}</style><![endif]-->
+<!--[if !IE]><html lang="en"><![endif]-->
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Required meta tags for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <meta name="misapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="" />
+    <meta name="twitter:site" content="@twitter_username" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="R" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+    <!-- gmail verification -->
+    <meta name="google-site-verification" content="" />
+    <!-- Website title -->
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="assets/css/intlTelInput.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <!-- jQuery (necessary for jQuery plugins) -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <!-- Main Coding Start Here -->
+
+
+
+
+
+
+
+
+    <!-- request-demo -->
+    <section class="request-demo contact-us section-padding">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="section-tag fw-semi-bold d-block text-uppercase mb-3 wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="300ms">
+                    Get Country code
+                </span>
+            </div>
+            <div class="col-xl-8 offset-xl-2 wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="300ms">
+                <form action="#" method="POST" class="bg-white p-5 is-radius-20 is-shadow request-demo-info">
+                    <div id="contactNumber" class="form-group mb-4 pb-1">
+                        <label for="contact-number" class="form-label text-clr-black mb-3 d-block">Contact Number</label>
+                        <input type="text" class="country-code form-control is-radius-8 py-3 ps-5" id="contact-number-input"
+                            placeholder="Contact Number" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- request-demo -->
+
+
+
+
+    <script>
+        // init plugin
+        $(function () {
+
+            function bgInitForIti() {
+                document.querySelector('.iti__flag').style.cssText = ` background: none;  `
+            }
+
+
+            var contactNumberInput = document.querySelector("#contact-number-input");
+            var itiContactNumberInput = window.intlTelInput(contactNumberInput);
+            bgInitForIti();
+            $('#contactNumber .iti__selected-flag .iti__flag').text(itiContactNumberInput.getSelectedCountryData().dialCode);
+            contactNumberInput.addEventListener("countrychange", function () {
+                $('#contactNumber .iti__selected-flag .iti__flag').text(itiContactNumberInput.getSelectedCountryData().dialCode);
+            });
+
+
+
+
+
+            // If you need another field, you need to declar a id same waya below..
+
+
+
+
+            // var telePhoneInput = document.querySelector("#telephone-input");
+            // var itiTelePhoneInput = window.intlTelInput(telePhoneInput);
+            // bgInitForIti();
+            // $('#tel .iti__selected-flag .iti__flag').text(itiTelePhoneInput.getSelectedCountryData().dialCode);
+            // telePhoneInput.addEventListener("countrychange", function () {
+            //     $('#tel .iti__selected-flag .iti__flag').text(itiTelePhoneInput.getSelectedCountryData().dialCode);
+            // });
+
+
+            // var officeNumberInput = document.querySelector("#officenumber-input");
+            // var itiOfficeNumberInput = window.intlTelInput(officeNumberInput);
+            // bgInitForIti();
+            // $('#officenumber .iti__selected-flag .iti__flag').text(itiOfficeNumberInput.getSelectedCountryData().dialCode);
+            // officeNumberInput.addEventListener("countrychange", function () {
+            //     $('#officenumber .iti__selected-flag .iti__flag').text(itiOfficeNumberInput.getSelectedCountryData().dialCode);
+            // });
+
+
+        })
+    </script>
+    <!-- International tel input js -->
+
+
+
+
+    <!-- Main Coding End -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?71"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Script JS -->
+
+    <!-- International tel input js -->
+    
+
+
+
+</body>
+
+</html>

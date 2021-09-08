@@ -1,0 +1,77 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Project Name
+ * @author      - 
+ * @created_by  - kawsar bin siraj
+ * @created_at  - 
+ * @modified_by -
+ */
+
+/* fonts import */
+@import url(../fonts/biennale/stylesheet.css);
+// to use : font-family: 'Biennale';';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+// font-family: 'Poppins', sans-serif;
+/* fonts import -END */
+
+/* reset, root */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-white: #ffffff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--clr-white);
+    font-family: "Biennale";
+    font-size: 13px;
+    font-weight: 500;
+    --heder-top-height: 46px;
+    --banner-height: 846px;
+    --page-banner-height: 108px;
+    --theme-transition: all 0.3s linear;
+
+    @media (max-width: 576px) {
+        --theme-gutter: 20px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1355px;
+    }
+}
+
+
+
+
+/* css for request-demo */
+.request-demo {
+    background: linear-gradient(180deg, #E5EFF6 0%, rgba(229, 239, 246, 0.6) 100%);
+    .request-demo-info {
+        
+        #contact-number-input {
+            background-position: 50px center;
+            padding-left: 110px !important;
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.8327 7.08398L9.99935 12.9173L4.16602 7.08398' stroke='%239DB2D9' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        }
+
+        .form-control {
+            color: #434242;
+            background-size: 16px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+/* css for request-demo -END*/
+
+
+
+
